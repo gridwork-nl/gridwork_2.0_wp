@@ -1,6 +1,6 @@
 <footer>
       <div class="gen-flex-container section-center" id="footer-flex-container">
-        <a href="#" class="left-footer">
+        <a href="<?php echo site_url('')?>" class="left-footer">
           <img src="<?php echo get_template_directory_uri(); ?>/img/gridwork-white.svg" alt="">
         </a>
         <div class="middle-left-footer">

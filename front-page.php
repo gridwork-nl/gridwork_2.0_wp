@@ -203,7 +203,7 @@
       </a>
       <!-- end of single article -->
       <!-- single article -->
-      <a href="" class="blog-article" data-aos="fade-down" data-aos-delay="300">
+      <a href="" class="blog-article" data-aos="fade-up" data-aos-delay="300">
           <img src="<?php echo get_template_directory_uri(); ?>/img/privaet.JPG" alt="">
           <div class="blog-img-bcg"></div>
          <div class="blog-text">
@@ -215,7 +215,6 @@
       <!-- single article -->
       <a href="" class="blog-article" data-aos="fade-up"data-aos-delay="600">
           <img src="<?php echo get_template_directory_uri(); ?>/img/privaet.JPG" alt="">
-          <div class="blog-img-bcg"></div>
          <div class="blog-text">
           <h3>Blog Article Title</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe similique, eveniet recusandae voluptatibus accusantium accusamus sint nihil delectus dolorum vitae!</p>
@@ -226,7 +225,7 @@
       </div>
       <div id="blog-anchor"></div>
       <div class="gen-flex-container" id="blog-btn-container">
-        <a href="" class="blog-btn">
+        <a href="<?php echo site_url('/blog');?>" class="blog-btn">
           <div class="inner-btn"></div>
           <p class="btn-text">VIEW ALL</p>
         </a>

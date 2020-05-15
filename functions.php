@@ -30,6 +30,11 @@ function gridwork_init() {
      wp_enqueue_script('theme-js', get_template_directory_uri() . '/js/aosini.js', array( 'AOS' ), null, true);
  }
 
+ function new_excerpt_more( $more ) {
+    return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
  // remove append from archive title
  add_filter( 'get_the_archive_title', function ($title) {    
      if ( is_category() ) {    
@@ -49,4 +54,3 @@ function gridwork_init() {
          }
      return $title;    
  });
-

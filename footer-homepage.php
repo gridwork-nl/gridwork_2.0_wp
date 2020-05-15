@@ -22,6 +22,6 @@
       </div>
     </footer>
     <?php wp_footer(); ?>
-    <script src="<?php echo get_template_directory_uri();?>/js/color-change.js"></script>
+    <script src="<?php echo get_template_directory_uri();?>/js/front-page.js"></script>
    </body>
 </html>

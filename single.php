@@ -2,45 +2,23 @@
 
 <section id="blog-page">
 <div class="blog-container">
-    <!-- section title -->
-    <div class="section-title" id="blog-page-title">
-      <div class="title-main">
-        <h2>BLOG</h2>
-      <div class="title-bar" id="blog-title-bar"></div>
-      </div>
-      <div class="number" id="work-number">
-        <p>003</p>
-        <div class="number-bar"></div>
-      </div>
-     </div>
-    <!-- end of section title -->
  <div class="left-blog">
  <?php while(have_posts()){
  the_post(); ?>
-<div class="post-item">
-<div class="left-post">
-<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
-<div class="blog-img-bcg" id="blog-page-bcg"></div>
+<div class="single-post">
+<h1 class="post-title"><?php the_title(); ?></h1>
+<div class="time-meta"><p>Geplaatst op <?php the_time('j F Y'); ?> in <?php echo get_the_category_list('en'); ?></p></div>
+<div class="post-img">
+<?php the_post_thumbnail('large'); ?>
 </div>
-<div class="right-post">
-<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-<div class="time-meta"><p>Placed on <?php the_time('j F Y'); ?> in <?php echo get_the_category_list(' and '); ?></p></div>
-<div class="post-excerpt">
-<?php the_excerpt(); ?><span>&nbsp;...<a href="<?php the_permalink(); ?>">read more</a></span>
+<?php the_content(); ?>
 </div>
-</div>
-</div>
-<?php
-} ?>
-<div class="pagination">
- <?php echo paginate_links(); ?>
-</div>
+
+ <?php
+} 
+?>
  </div>
  <div class="right-blog">
-   <div class="blog-right-title">
-     <h1>Blog</h1>
-     <div class="blog-right-bar"></div>
-   </div>
  <div class="cat-list">
  <div class="min-list">
    <h2 class="blog-links-title">Recently Added</h2>

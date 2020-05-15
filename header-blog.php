@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <nav>
+    <nav id="blog-nav">
       <div class="mobile-overlay">
         <a href="<?php echo site_url('');?>" class="mobile-link">
             <h2>HOME</h2>
@@ -30,7 +30,7 @@
           <p>(004)</p>
           </a>
       </div>
-      <a href="<?php echo site_url('');?>" class="main-logo">
+      <a href="<?php echo site_url('');?>" class="main-logo" id="blog-logo">
         <img src="<?php echo get_template_directory_uri(); ?>/img/gridwork-black.svg" alt="gridwork-logo" />
       </a>
       <div class="social-bar link-container">
@@ -41,10 +41,10 @@
       <div class="social-btn">
         <p>FOLLOW US</p>
       </div>
-      <div class="mobile-btn">
+      <div class="mobile-btn" id="blog-btn">
         <div class="bar1 main-bar"></div>
         <div class="bar2 main-bar"></div>
         <div class="bar3 main-bar"></div>
       </div>
-      <div class="nav-behind"></div>
+      <div class="nav-behind" id="blog-behind"></div>
     </nav>

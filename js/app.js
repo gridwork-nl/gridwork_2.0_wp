@@ -1,20 +1,5 @@
 // logo hide one scroll
 $(document).ready(function () {
-
- var hideLogo = function () {
-  if ($(this).scrollTop() > 800 && $(window).width() >= 992) {
-   $('.main-logo').addClass('hide-logo');
-  } else {
-   $('.main-logo').removeClass('hide-logo');
-  }
- }
- 
-  //change on static load
-  $(document).ready(hideLogo);
-
-  //change on scroll
-  $(window).scroll(hideLogo);
-
 //mobile btn
   //toggle btn
   $(".mobile-btn").click(function () {
