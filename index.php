@@ -70,12 +70,14 @@
    } ?>
   </div>
  </div>
-  <div class="gen-flex-container" id="back-home-flex">
+ <!-- back home btn -->
+      <div class="gen-flex-container" id="back-home-flex">
         <a href="<?php echo site_url('/blog');?>" class="blog-btn" id="blog-page-btn">
           <div class="inner-btn"></div>
           <p class="btn-text">HOMEPAGE</p>
         </a>
       </div>
+ <!-- end of back home btn -->
  </div>
 </div>
 </section>

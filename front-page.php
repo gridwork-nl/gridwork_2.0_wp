@@ -87,62 +87,31 @@
      </div>
     <!-- end of section title -->
     <div class="section-center" id="work-center">
-      <a href="#" class="work-item" data-aos="fade-up">
+        <?php
+        $homepageProjects = new WP_Query(array(
+          'posts_per_page' => 4,
+          'post_type' => 'project'
+        ));
+        
+        while($homepageProjects->have_posts()) {
+          $homepageProjects->the_post(); ?>
+        <!-- single project -->
+        <a href="<?php the_permalink(); ?>" class="work-item" data-aos="fade-up">
         <div class="left-item">
-          <img clas="work-img" src="<?php echo get_template_directory_uri(); ?>/img/privaet.JPG" alt="privaet">
+          <?php the_post_thumbnail('large',  ['class' => 'work-img']); ?>
         <div class="img-bcg"></div>
         </div>
         <div class="right-item">
           <div class="work-item-title">
-            <h2>PRIVAET FINANCIEEL MAATWERK</h2>
+            <h2><?php the_title(); ?></h2>
             <p>WEBDESIGN & WEBDEVELOPMENT</p>
           </div>
-            <p class="work-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, minus mollitia. Et soluta nobis atque! Error recusandae eum dolore voluptatum ut eligendi alias tempora quas iure asperiores, iusto, ducimus fugiat?</p>
-
+            <div class="work-text"><?php the_excerpt(); ?><span>&nbsp;...&nbsp;<p>read more</p></div>
         </div>
       </a>
-      <a href="#" class="work-item" data-aos="fade-up">
-        <div class="left-item">
-          <img clas="work-img" src="<?php echo get_template_directory_uri(); ?>/img/privaet.JPG" alt="privaet">
-        <div class="img-bcg"></div>
-        </div>
-        <div class="right-item">
-          <div class="work-item-title">
-            <h2>PRIVAET FINANCIEEL MAATWERK</h2>
-            <p>WEBDESIGN & WEBDEVELOPMENT</p>
-          </div>
-            <p class="work-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, minus mollitia. Et soluta nobis atque! Error recusandae eum dolore voluptatum ut eligendi alias tempora quas iure asperiores, iusto, ducimus fugiat?</p>
-
-        </div>
-      </a>
-      <a href="#" class="work-item" data-aos="fade-up">
-        <div class="left-item">
-          <img clas="work-img" src="<?php echo get_template_directory_uri(); ?>/img/privaet.JPG" alt="privaet">
-        <div class="img-bcg"></div>
-        </div>
-        <div class="right-item">
-          <div class="work-item-title">
-            <h2>PRIVAET FINANCIEEL MAATWERK</h2>
-            <p>WEBDESIGN & WEBDEVELOPMENT</p>
-          </div>
-            <p class="work-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, minus mollitia. Et soluta nobis atque! Error recusandae eum dolore voluptatum ut eligendi alias tempora quas iure asperiores, iusto, ducimus fugiat?</p>
-
-        </div>
-      </a>
-      <a href="#" class="work-item" data-aos="fade-up">
-        <div class="left-item">
-          <img clas="work-img" src="<?php echo get_template_directory_uri(); ?>/img/privaet.JPG" alt="privaet">
-        <div class="img-bcg"></div>
-        </div>
-        <div class="right-item">
-          <div class="work-item-title">
-            <h2>PRIVAET FINANCIEEL MAATWERK</h2>
-            <p>WEBDESIGN & WEBDEVELOPMENT</p>
-          </div>
-            <p class="work-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, minus mollitia. Et soluta nobis atque! Error recusandae eum dolore voluptatum ut eligendi alias tempora quas iure asperiores, iusto, ducimus fugiat?</p>
-
-        </div>
-      </a>
+        <!-- end of single project -->
+        <?php }
+        ?>
     </div>
     <!-- view all btn -->
     <div class="gen-flex-container">
@@ -192,35 +161,26 @@
      </div>
     <!-- end of section title -->
     <div class="gen-flex-container section-center blog-container">
-      <!-- single article -->
-      <a href="" class="blog-article" data-aos="fade-up">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/privaet.JPG" alt="">
-          <div class="blog-img-bcg"></div>
-         <div class="blog-text">
-          <h3>Blog Article Title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe similique, eveniet recusandae voluptatibus accusantium accusamus sint nihil delectus dolorum vitae!</p>
-         </div>
-      </a>
-      <!-- end of single article -->
-      <!-- single article -->
-      <a href="" class="blog-article" data-aos="fade-up" data-aos-delay="300">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/privaet.JPG" alt="">
-          <div class="blog-img-bcg"></div>
-         <div class="blog-text">
-          <h3>Blog Article Title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe similique, eveniet recusandae voluptatibus accusantium accusamus sint nihil delectus dolorum vitae!</p>
-         </div>
-      </a>
-      <!-- end of single article -->
-      <!-- single article -->
-      <a href="" class="blog-article" data-aos="fade-up"data-aos-delay="600">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/privaet.JPG" alt="">
-         <div class="blog-text">
-          <h3>Blog Article Title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe similique, eveniet recusandae voluptatibus accusantium accusamus sint nihil delectus dolorum vitae!</p>
-         </div>
-        </a>
-        <!-- end of single article -->
+    <?php
+        $homepageBlog = new WP_Query(array(
+          'posts_per_page' => 3,
+          'post_type' => 'post'
+        ));
+        
+        while($homepageBlog->have_posts()) {
+          $homepageBlog->the_post(); ?>
+          <!-- single article -->
+          <a href="<? the_permalink()?>" class="blog-article" data-aos="fade-up">
+              <?php the_post_thumbnail('large'); ?>
+              <div class="blog-img-bcg"></div>
+            <div class="blog-text">
+              <h3><?php the_title(); ?></h3>
+              <?php the_excerpt(); ?><span>&nbsp;...&nbsp;<p>read more</p>
+            </div>
+          </a>
+          <!-- end of single article -->
+        <?php }
+        ?>
          <!-- view all btn -->
       </div>
       <div id="blog-anchor"></div>

@@ -556,7 +556,7 @@ Menu Items Styling
 }
 
 /* ===================================== 
-3.0 Home - Work
+3.0 Work
 ===================================== */ 
 
 .section-title h2{
@@ -606,6 +606,10 @@ Menu Items Styling
  margin-top: 80px; 
 }
 
+.work-text p{
+  display: inline;
+}
+
 .work-item img{
  width: 100%;
  height: auto;
@@ -650,8 +654,91 @@ Menu Items Styling
   padding: 0!important;
 }
 
+/* work page css */
+#project-hero{
+  width: 100%;
+  height: 70vh;
+  filter: grayscale(1);
+  position: absolute;
+  top: 0;
+}
+
+#project-hero img{
+  width: 100%;
+  height: auto;
+}
+
+.project-bar-down{
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 30px;
+  background: #000;
+}
+
+#project-main{
+  margin-top: calc(70vh - 132px);
+}
+
+.project-title{
+  text-align: center;
+  margin: 30px auto;
+}
+
+.project-btn-container{
+  padding: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.project-btn:hover .inner-btn{
+  transform: translateX(0);
+ }
+ 
+ .project-btn:hover .btn-text{
+  color: #fff
+ }
+
+.project-text{
+  text-align: center;
+  margin: 30px auto;
+}
+
+.project-btn {
+  width: 200px;
+  height: 40px;
+  margin: 15px 0;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 600;
+  overflow: hidden;
+  margin: 25px;
+}
+
+.project-btn p{
+ top: -47px;
+}
+
+.project-text{
+  width: 80%
+}
+
+.project-flex-container{
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
 /* ===================================== 
-4.0 Home - About
+4.0 About
 ===================================== */ 
 
 #about-title-bar{
@@ -691,7 +778,7 @@ height: auto;
 }
 
 /* ===================================== 
-4.0 Home - Blog + Blog Page
+4.0 Blog
 ===================================== */ 
 
 .blog-article{
@@ -812,6 +899,10 @@ height: auto;
   padding-bottom: 50px;
 }
 
+.blog-text p{
+  display: inline;
+}
+
 .post-item {
   display: flex;
   flex-direction: column;
@@ -917,7 +1008,7 @@ height: auto;
  }
  
 /* ===================================== 
-4.0 Home - Contact
+4.0 Contact
 ===================================== */ 
 
 #contact-title-bar{
@@ -989,7 +1080,7 @@ footer{
 }
 
 /* ===================================== 
-6.0 Home - Responsive
+6.0 Web - Responsive
 ====================================== */
 
 @media screen and (min-width: 992px) {
@@ -1060,6 +1151,11 @@ footer{
  .services-text{
    font-size: 1.8rem;
    font-weight: 600;
+ }
+
+ .top-services{
+   font-size: 0.9rem;
+   font-weight: 300;
  }
  
  .cube img:nth-child(1){
@@ -1198,10 +1294,6 @@ footer{
  
  #blog-page-bcg{
   display: block;
- }
-
- #blog-btn-container{
-  margin-top: -100px;
  }
 
  .blog-container {
