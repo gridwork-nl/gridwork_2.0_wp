@@ -71,4 +71,3 @@ var changeBlogAnchor = (function(){
 $(document).ready(changeBlogAnchor);
 $(window).resize(changeBlogAnchor);
 
-

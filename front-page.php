@@ -26,9 +26,9 @@
       <p class="bottom-services">HELPING YOU ACHIEVE THE BEST ONLINE RESULTS</p>
      </div>
      <div class="center-text-w-bar link-container">
-      <a href="#work" class="text-down">VIEW PROJECTS</a>
+      <a href="<?php echo site_url('/projects');?>" class="text-down">VIEW PROJECTS</a>
       <div class="center-bar"></div>
-      <a href="#contact" class="text-up">GET IN TOUCH</a>
+      <a href="<?php echo site_url('/blog');?>" class="text-up">LATEST NEWS</a>
      </div>
      <div class="menu-big">
       <a href="#work" id="work-link">
@@ -96,7 +96,7 @@
         while($homepageProjects->have_posts()) {
           $homepageProjects->the_post(); ?>
         <!-- single project -->
-        <a href="<?php the_permalink(); ?>" class="work-item" data-aos="fade-up">
+        <a href="<?php the_permalink(); ?>" class="work-item" data-aos="fade-up" id="work-item">
         <div class="left-item">
           <?php the_post_thumbnail('large',  ['class' => 'work-img']); ?>
         <div class="img-bcg"></div>
@@ -209,18 +209,8 @@
     <!-- end of section title -->
     <div class="gen-flex-container section-center section-padding" id="contact-flex">
       <div class="left-flex" id=contact-left>
-        <p>Want to get in touch? Leave a message!</p>
-        <form action="
-        " width="100px">
-        <label for="">Name</label>
-        <input type="text">
-        <label for="">Phone</label>
-        <input type="text">
-        <label for="">Email</label>
-        <input type="text">
-        <label for="">Message</label>
-        <input type="textarea">
-      </form>
+        <p><strong>Want to get in touch? Leave a message!</strong></p>
+        <?php echo do_shortcode( '[contact-form-7 id="62" title="main-contact-form"]' ); ?>
       </div>
       <div class="right-flex" id="contact-right">
         <div class="contact-wrap">

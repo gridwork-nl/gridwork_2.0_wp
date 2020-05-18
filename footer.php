@@ -16,9 +16,14 @@
           <p>Netherlands</p>
         </div>
         <div class="right-footer">
-          <p>info@gridwork.nl</p>
-          <p>+34 667 320 015</p>
+        <a href="mailto:info%40gridwork%2Enl" target="_blank">info@gridwork.nl</a></p>
+        <a href="callto:+34667320015">+34 667 320 015</a>
         </div>
+      </div>
+      <div class="footer-misc">
+        <p>	&copy; Copyright Gridwork Design & Marketing 2020</p>
+        <a href="<?php echo site_url('/privacy-policy')?>"></a>
+        <a href="<?php echo site_url('/terms-and-conditions')?>"></a>
       </div>
     </footer>
 

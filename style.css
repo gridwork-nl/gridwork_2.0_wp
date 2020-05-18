@@ -324,7 +324,7 @@ span{
 .text-up{
  writing-mode: vertical-rl;
  position: relative;
- transform: rotate(180deg) translateY(330px);
+ transform: rotate(180deg) translateY(230px);
 }
 
 .center-bar{
@@ -581,9 +581,9 @@ Menu Items Styling
  margin: auto;
 }
 
-#work-title-bar{
+#work-title-bar,
+#project-title-bar{
  background-color: #3c8daa;
- 
 }
 
 .number{
@@ -679,7 +679,7 @@ Menu Items Styling
 }
 
 #project-main{
-  margin-top: calc(70vh - 132px);
+  margin-top: calc(70vh - 100px);
 }
 
 .project-title{
@@ -729,10 +729,87 @@ Menu Items Styling
 }
 
 .project-flex-container{
+  width: 70%;
   margin: 50px auto;
+  padding-left: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.technology-item{
+  width: 70%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  overflow: hidden;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.technology-main{
+  width: 70%;
+  height: 100%;
+}
+
+.technology-img{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technology-img img{
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+.technology-title{
+  font-size: 	1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease all;
+}
+
+.technology-focus{
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 300;
+  height: 100%;
+  transition: 0.3s ease all;
+  display: flex;
+  align-items: center;
+}
+
+.technology-item:hover .technology-focus{
+  transform: translateY(-100px);
+}
+
+.technology-item:hover .technology-title{
+  transform: translateY(-100px);
+}
+
+/* work archive css */
+
+#project-center{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#project-item{
+  margin: 0 10px;
+}
+
+#project-title{
+  margin-bottom: 50px;
 }
 
 
@@ -1060,6 +1137,47 @@ height: auto;
   }
 }
 
+.cf7input{
+  padding: 5px;
+  background: transparent;
+  border: 1px solid #231f20;
+}
+
+.cf7textarea{
+  background: transparent;
+  border: 1px solid #231f20;
+  width: 97%;
+  padding: 5px;
+  resize: none;
+}
+
+.wpcf7-submit {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 97%;
+  min-height: 30px;
+  padding: 0px 30px;
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+  margin: 10px auto;
+}
+
+.wpcf7-submit:hover{
+  color: #000;
+  background: transparent;
+}
+
+
+
 /* ===================================== 
 5.0 Footer
 ===================================== */ 
@@ -1079,6 +1197,43 @@ footer{
   text-align: center;
 }
 
+.right-footer a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.right-footer a:hover{
+  color: #3c8daa;
+}
+
+.footer-misc{
+  position: relative;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-misc p{
+  color: #fff;
+  font-weight: 300;
+  padding: 4px 10px;
+}
+
+.footer-misc a{
+  color: #fff;
+  font-weight: 300;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+.footer-misc a:hover{
+  color: #891818;
+}
+
 /* ===================================== 
 6.0 Web - Responsive
 ====================================== */
@@ -1089,6 +1244,11 @@ footer{
   .menu-big{
   display: block;
  }
+ 
+ .menu-big h2{
+  font-size: 5rem;
+  line-height: 5.2rem;
+  }
 
  .center-text-w-bar{
   display: flex;
@@ -1136,6 +1296,28 @@ footer{
  .number-bar{
   display: block;
  }
+
+ /* title bars */
+ #work-title-bar{
+  margin-left: 20px;
+  height: 5px;
+ }
+
+ #about-title-bar{
+  margin-left: -20px;
+  height: 5px;
+ }
+ 
+ #blog-title-bar{
+  margin-left: 20px;
+  height: 5px;
+ }
+ 
+ #contact-title-bar{
+  margin-left: -20px;
+  height: 5px;
+ }
+ 
  
  /* main section responsive */
  .wrap{
@@ -1217,7 +1399,7 @@ footer{
   line-height: 1.5rem;
  }
 
- .work-item:nth-child(even){
+ #work-item:nth-child(even){
   flex-direction: row-reverse;
  }
  
@@ -1234,6 +1416,26 @@ footer{
  .img-bcg{
   display: block;
  }
+
+ #project-item{
+   width: 48%;
+ }
+ 
+ .project-flex-container{
+  width: 50%;
+}
+
+#project-title{
+  flex-direction: row-reverse;
+}
+
+#project-title .number{
+  display: none;
+}
+
+#project-title-bar{
+  margin-left: -30px;
+}
 
 /* about section responsive */
 #about-title,
@@ -1272,6 +1474,7 @@ footer{
   width: 500px;
   margin: auto;
  }
+
  
  /* blog section responsive */
  .blog-btn{
@@ -1376,13 +1579,25 @@ footer{
 #footer-flex-container{
  text-align: start;
 }
-.menu-big h2{
-  font-size: 6rem;
-  line-height: 6.2rem;
-  }
-  
+
+.footer-misc{
+  flex-direction: row;
+  bottom: -35px;
+  font-size: 0.9rem;
+}
+
+/* work page + archive responsive */
   .block-bar-container{
   transform: translateY(-3.5rem);
+  }
+
+  .technology-item{
+    width: 30%;
+  }
+  
+  #project-item img{
+    width: 300px;
+    height: 210px;
   }
 }
 
@@ -1393,8 +1608,8 @@ footer{
    }
    
    .menu-big h2{
-    font-size: 8rem;
-    line-height: 8.2rem;
+    font-size: 6rem;
+    line-height: 6.2rem;
    }
    
    .block-bar-container{
@@ -1413,6 +1628,16 @@ footer{
   
   .post-item{
     max-height: 500px;
+  }
+
+  .menu-big h2{
+    font-size: 8rem;
+    line-height: 8.2rem;
+   }
+
+  .text-up{
+
+    transform: rotate(180deg) translateY(300px);
   }
 }
 
