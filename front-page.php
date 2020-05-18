@@ -142,7 +142,7 @@
         </div>
         <div class="right-flex about-flex" data-aos="fade-left" data-aos-delay="300">
            <div class="text-container">
-             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat eveniet dolorum illum libero voluptatum repellendus, dicta nobis aliquid accusamus reiciendis, laudantium ex inventore blanditiis earum beatae accusantium aspernatur ipsa praesentium delectus natus facere minima consequuntur iusto. Nesciunt, facere quibusdam. Provident tenetur facilis nesciunt nostrum facere voluptatem doloribus cumque quaerat commodi odit ut suscipit maxime, fuga porro aperiam quos mollitia incidunt possimus saepe accusantium delectus? Quia officia beatae veniam maiores ipsam consectetur aliquid cupiditate explicabo excepturi delectus maxime velit illum eaque, ea id voluptates ad quos placeat quas quidem. Doloremque voluptas, iste incidunt ipsa qui modi earum saepe non debitis tempora.</p>
+             <p> <?php the_field('about-text') ?></p>
            </div>
         </div>
       </div>
