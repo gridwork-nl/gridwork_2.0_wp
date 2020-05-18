@@ -5,13 +5,13 @@
 
 <?php $url = get_the_post_thumbnail_url(); ?>
 
-<div id="project-hero" style="background: url('<?php echo $url ?>'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+<div id="project-hero" style="background: url('<?php echo $url ?>'); background-repeat: no-repeat; background-size: cover; background-position: center;">
 </div>
 <section id="project-main">
 <div class="project-bar-down"></div>
 <div class="project-title">
 <h2><?php the_title(); ?></h2>
-<p>WEBDESIGN & WEBDEVELOPMENT</p>
+<p><?php the_field('subtitle') ?></p>
 </div>
 <div class="project-btn-container">
 <!-- webpage btn -->

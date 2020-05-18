@@ -6,7 +6,7 @@
 <!-- main section -->
 <section id="main" class="main-section">
     <div class="wrap-container">
-      <div class="wrap">
+      <div class="contact-wrap">
         <div class="cube">
          <img src="<?php echo get_template_directory_uri(); ?>/img/box-wall.svg" alt="">
          <img src="<?php echo get_template_directory_uri(); ?>/img/box-wall.svg" alt="">
@@ -73,7 +73,7 @@
       </a>
      </div>
    </section>
-    <section id="work" class="main-section">
+    <section id="work" class="main-section anchor">
       <!-- section title -->
      <div class="section-title" id="work-title">
       <div class="title-main">
@@ -124,7 +124,7 @@
     </section>
     <!-- end of main section -->
     <!-- about section -->
-    <section id="about" class="main-section">
+    <section id="about" class="main-section anchor">
       <div class="section-title" id="about-title">
         <div class="title-main">
           <h2>ABOUT</h2>
@@ -147,7 +147,7 @@
         </div>
       </div>
     </section>
-    <section id="blog">
+    <section id="blog" class="anchor">
        <!-- section title -->
      <div class="section-title" id="blog-title">
       <div class="title-main">
@@ -194,7 +194,7 @@
     </section>
         <!-- end of about section -->
         <!-- contact section -->
-    <section id="contact">
+    <section id="contact" class="anchor">
        <!-- section title -->
      <div class="section-title" id="contact-title">
       <div class="title-main">

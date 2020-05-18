@@ -17,24 +17,24 @@
   </head>
   <body>
     <nav>
-      <div class="mobile-overlay">
+    <div class="mobile-overlay">
         <a href="<?php echo site_url('');?>" class="mobile-link">
             <h2>HOME</h2>
             <p>(000)</p>
           </a>
-        <a href="#work" class="mobile-link">
+        <a href="<?php echo site_url('/#work');?>" class="mobile-link">
             <h2>WORK</h2>
             <p>(001)</p>
           </a>
-        <a href="#about" class="mobile-link">
+        <a href="<?php echo site_url('/#about');?>" class="mobile-link">
           <h2>ABOUT</h2>
           <p>(002)</p>
           </a>
-        <a href="#blog" class="mobile-link">
+        <a href="<?php echo site_url('/#blog');?>" class="mobile-link">
           <h2>BLOG</h2>
           <p>(003)</p>
           </a>
-        <a href="#contact" class="mobile-link">
+        <a href="<?php echo site_url('/#contact');?>" class="mobile-link">
           <h2>CONTACT</h2>
           <p>(004)</p>
           </a>

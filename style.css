@@ -65,6 +65,10 @@ span{
  z-index: 1010;
 }
 
+.anchor{
+  padding-top: 80px;
+}
+
 .bar1,
 .bar2,
 .bar3 {
@@ -1102,7 +1106,7 @@ height: auto;
 
 .contact-wrap{
   position: relative;
-  top: 0%;
+  top: -10%;
   left: 0%;
   z-index: 10;
 }
@@ -1141,6 +1145,7 @@ height: auto;
   padding: 5px;
   background: transparent;
   border: 1px solid #231f20;
+  width: 97%;
 }
 
 .cf7textarea{
@@ -1435,6 +1440,10 @@ footer{
 
 #project-title-bar{
   margin-left: -30px;
+}
+
+#project-hero{
+  background-attachment: fixed;
 }
 
 /* about section responsive */
