@@ -3,7 +3,7 @@ $(document).ready(function () {
   $(".pre-loader").delay(2000).fadeOut("slow");
 
 // logo hide one scroll
-(function () {
+$(document).ready(function () {
 //mobile btn
   //toggle btn
   $(".mobile-btn").click(function () {
