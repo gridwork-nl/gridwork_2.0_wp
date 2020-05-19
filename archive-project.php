@@ -35,14 +35,14 @@
     <?php   endwhile; 
         endif; ?>
     </div>
-    <!-- view all btn -->
+    <!-- back home btn -->
     <div class="gen-flex-container">
       <a href="<?php echo site_url('');?>" class="blog-btn">
         <div class="inner-btn"></div>
         <p class="btn-text">HOMEPAGE</p>
       </a>
     </div>
-    <!-- end of view all btn -->
+    <!-- end of back home btn -->
     </section>
     <!-- end of main section -->
 

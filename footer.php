@@ -22,8 +22,8 @@
       </div>
       <div class="footer-misc">
         <p>	&copy; Copyright Gridwork Design & Marketing 2020</p>
-        <a href="<?php echo site_url('/privacy-policy')?>"></a>
-        <a href="<?php echo site_url('/terms-and-conditions')?>"></a>
+        <a href="<?php echo site_url('/privacy-policy')?>">Privacy Policy</a>
+        <a href="<?php echo site_url('/terms-and-conditions')?>">Terms and Conditions</a>
       </div>
     </footer>
 

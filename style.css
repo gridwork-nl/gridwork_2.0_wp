@@ -25,7 +25,7 @@ body {
  font-family: "Cairo", sans-serif;
  font-size: 1.2rem;
  font-weight: 300;
- background-color: #EEEADC;
+ background-color: #E6EAEB;
 }
 
 nav{
@@ -97,7 +97,24 @@ span{
   transition: 0.1s ease all;
 }
 
-/* mobile btn overlay */
+/* [ PRELOADER ] */
+
+.pre-loader{
+  width: 100%;
+  height: 100%;
+  background: #231f20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1500;
+}
+
+
+/* [ MOBILE BTN OVERLAY ] */
 
 .mobile-overlay{
  position: fixed;
@@ -122,7 +139,7 @@ span{
 .mobile-overlay a h2,
 .mobile-overlay a p{
  display: inline-block;
- color: #EEEADC;
+ color: #E6EAEB;
  position: relative;
  z-index: -10;
 }
@@ -221,7 +238,7 @@ span{
  border-right: 1px solid #231f20;
  top: 0;
  left: 0;
- background-color: #EEEADC;
+ background-color: #E6EAEB;
  display: flex;
  justify-content: space-evenly;
  transition: 0.2s all ease;
@@ -236,7 +253,7 @@ span{
   left: 44px;
   top: 70vh;
   font-size: 1rem;
-  color: #EEEADC;
+  color: #E6EAEB;
   background: #231f20;
   padding: 15px 2px;
   margin-left: -44px;
@@ -282,7 +299,7 @@ span{
   left: 0;
   width: 100vw;
   height: 80px;
-  background: #EEEADC;
+  background: #E6EAEB;
   z-index: 800;
   border-bottom: 	1px solid #231f20;
 }
@@ -513,7 +530,6 @@ Menu Items Styling
  margin: 0;
  position: relative;
  animation: loop 7s infinite;
- z-index: 10;
 }
 
 .cube img{
@@ -665,11 +681,7 @@ Menu Items Styling
   filter: grayscale(1);
   position: absolute;
   top: 0;
-}
-
-#project-hero img{
-  width: 100%;
-  height: auto;
+  background: transparent;
 }
 
 .project-bar-down{
@@ -734,7 +746,7 @@ Menu Items Styling
 
 .project-flex-container{
   width: 70%;
-  margin: 50px auto;
+  margin: 0px auto 20px auto;
   padding-left: 50px;
   display: flex;
   justify-content: center;
@@ -756,6 +768,11 @@ Menu Items Styling
 .technology-main{
   width: 70%;
   height: 100%;
+}
+
+#technologies h3{
+  text-align: center;
+  padding-top: 10px;
 }
 
 .technology-img{
@@ -1145,14 +1162,21 @@ height: auto;
   padding: 5px;
   background: transparent;
   border: 1px solid #231f20;
+  font-family: "Cairo", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
   width: 97%;
 }
 
 .cf7textarea{
   background: transparent;
   border: 1px solid #231f20;
+  font-family: "Cairo", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
   width: 97%;
   padding: 5px;
+  height: 250px;
   resize: none;
 }
 
@@ -1161,7 +1185,7 @@ height: auto;
   text-decoration: none;
   font-family: "Cairo", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   text-align: center;
   transition: all 250ms ease-in-out;
@@ -1238,6 +1262,50 @@ footer{
 .footer-misc a:hover{
   color: #891818;
 }
+
+/* [COOKIE BANNER] */
+#cookie-law {
+  position: fixed;
+  z-index: 99999;
+  background: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  padding: 10px 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#cookie-law p {
+  margin: 0;
+}
+
+.close-cookie-banner{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.close-cookie-banner span {
+  position: absolute;
+  color: black;
+  font-size: 1.2rem;
+  margin: 5px;
+  border: 1px solid #000;
+  padding: 0px 20px;
+  line-height: 1.6rem;
+  font-weight: 300 !important;
+}
+
+
+#cookie-law{
+  padding: 0px 0px 40px 0px;
+}
+
+#cookie-law p a{
+  font-weight: 600;
+}
+/* [/COOKIE BANNER] */
 
 /* ===================================== 
 6.0 Web - Responsive
@@ -1442,10 +1510,6 @@ footer{
   margin-left: -30px;
 }
 
-#project-hero{
-  background-attachment: fixed;
-}
-
 /* about section responsive */
 #about-title,
 #contact-title{
@@ -1595,6 +1659,7 @@ footer{
   font-size: 0.9rem;
 }
 
+
 /* work page + archive responsive */
   .block-bar-container{
   transform: translateY(-3.5rem);
@@ -1628,6 +1693,16 @@ footer{
    .post-item{
     max-height: 600px;
   }
+}
+
+@media screen and (min-width: 1400px) {
+.close-cookie-banner{
+  display: inline;
+}
+
+#cookie-law{
+  padding: 10px 0;
+}
 }
 
 @media screen and (min-width: 1500px){

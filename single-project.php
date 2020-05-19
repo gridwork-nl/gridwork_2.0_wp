@@ -5,7 +5,7 @@
 
 <?php $url = get_the_post_thumbnail_url(); ?>
 
-<div id="project-hero" style="background: url('<?php echo $url ?>'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+<div id="project-hero" data-parallax="scroll" data-image-src="<?php echo $url ?>">
 </div>
 <section id="project-main">
 <div class="project-bar-down"></div>
@@ -44,6 +44,7 @@ if( $gitLink): ?>
 </section>
 <section id="technologies">
 <div class="project-bar-down"></div>
+<h3>TECHNOLOGIES USED</h3>
 <div class="project-flex-container">
 <?php if( have_rows('technology_item') ): ?>
    

@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gridwork Design & Marketing</title>
     <?php wp_head(); ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102443387-2"></script>
@@ -16,6 +15,24 @@
 </script>
   </head>
   <body>
+  <?php if(is_front_page()) 
+    {?> 
+    <div class="pre-loader">
+    <div class="wrapper">
+        <div class="cube">
+         <img src="<?php echo get_template_directory_uri(); ?>/img/box-wall-white.svg" alt="">
+         <img src="<?php echo get_template_directory_uri(); ?>/img/box-wall-white.svg" alt="">
+         <img src="<?php echo get_template_directory_uri(); ?>/img/box-wall-white.svg" alt="">
+         <img src="<?php echo get_template_directory_uri(); ?>/img/box-wall-white.svg" alt="">
+         <img src="<?php echo get_template_directory_uri(); ?>/img/box-wall-white.svg" alt="">
+         <img src="<?php echo get_template_directory_uri(); ?>/img/box-wall-white.svg" alt="">
+        </div>
+        <div class="box-behind">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/box-wall-w-white.svg" alt="" id="cube-w">
+        </div>
+       </div>
+    </div>
+    <?php }?>
     <nav>
     <div class="mobile-overlay">
         <a href="<?php echo site_url('');?>" class="mobile-link">
@@ -46,6 +63,7 @@
         <a href="https://www.facebook.com/gridworknl/" target="_blank">FACEBOOK</a>
         <a href="https://www.instagram.com/gridwork_nl/" target="_blank">INSTAGRAM</a>
         <a href="https://www.linkedin.com/company/gridwork-design-marketing/" target="_blank">LINKEDIN</a>
+        <a href="https://github.com/gridwork-nl" target="_blank">GITHUB</a>
       </div>
       <div class="social-btn">
         <p>FOLLOW US</p>

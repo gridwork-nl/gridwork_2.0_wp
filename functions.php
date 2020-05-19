@@ -10,6 +10,8 @@ function add_theme_scripts(){
  wp_register_script( 'jQuery', '//code.jquery.com/jquery-3.4.1.min.js', null, null, true );
  wp_enqueue_script('jQuery');
  wp_enqueue_script("script", get_theme_file_uri('/js/app.js'), NULL, 1.0, true);
+ wp_enqueue_script("cookies", get_theme_file_uri('/js/eu_cookie_banner.js'), array( 'jQuery' ), 1.0, true);
+ wp_enqueue_script("parallax", get_theme_file_uri('/js/parallax.min.js'), array( 'jQuery' ), 1.0, true);
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');

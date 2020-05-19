@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gridwork Design & Marketing</title>
     <?php wp_head(); ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102443387-2"></script>
@@ -46,6 +45,7 @@
         <a href="https://www.facebook.com/gridworknl/" target="_blank">FACEBOOK</a>
         <a href="https://www.instagram.com/gridwork_nl/" target="_blank">INSTAGRAM</a>
         <a href="https://www.linkedin.com/company/gridwork-design-marketing/" target="_blank">LINKEDIN</a>
+        <a href="https://github.com/gridwork-nl" target="_blank">GITHUB</a>
       </div>
       <div class="social-btn">
         <p>FOLLOW US</p>

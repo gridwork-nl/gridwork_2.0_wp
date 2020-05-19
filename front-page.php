@@ -104,7 +104,7 @@
         <div class="right-item">
           <div class="work-item-title">
             <h2><?php the_title(); ?></h2>
-            <p>WEBDESIGN & WEBDEVELOPMENT</p>
+            <p><?php the_field( 'subtitle' ) ?></p>
           </div>
             <div class="work-text"><?php the_excerpt(); ?><span>&nbsp;...&nbsp;<p>read more</p></div>
         </div>
@@ -115,7 +115,7 @@
     </div>
     <!-- view all btn -->
     <div class="gen-flex-container">
-      <a href="" class="blog-btn">
+      <a href="<?php echo site_url('/projects');?>" class="blog-btn">
         <div class="inner-btn"></div>
         <p class="btn-text">VIEW ALL</p>
       </a>
@@ -142,7 +142,7 @@
         </div>
         <div class="right-flex about-flex" data-aos="fade-left" data-aos-delay="300">
            <div class="text-container">
-             <p> <?php the_field('about-text') ?></p>
+             <p>Gridwork Design & Marketing was founded in 2019 by Jasja Prick. The aim of the company is to provide an all-in-one solution for small businesses when it comes to their online presence. Our mission is to take the client's vision of their company and bring it to life in the online environment. Our two main focal points are design; which includes branding, webdesign, webdevelopment and print design, and marketing, which includes SEO optimization, content writing, ad campaigns and social media management. Are you looking to build your online presence? <a href="#contact">Contact</a> us now!</p>
            </div>
         </div>
       </div>
