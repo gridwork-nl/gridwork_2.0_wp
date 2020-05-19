@@ -1,6 +1,7 @@
 // pre-loader
 $(document).ready(function () {
-  $(".pre-loader").delay(2000).fadeOut("slow");
+  $(".pre-loader").delay(1500).fadeOut("slow");  
+});
 
 // logo hide one scroll
 $(document).ready(function () {
@@ -74,6 +75,4 @@ var changeBlogAnchor = (function(){
 
 $(document).ready(changeBlogAnchor);
 $(window).resize(changeBlogAnchor);
-
-});
 
